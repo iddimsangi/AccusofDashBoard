@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>DashBoard</title>
+  </head>
+  <body>
+    <input id="navtoggle" type="checkbox" style="display:none;"/>
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h1>
+          <i class="lab la-accusoft"></i>
+          <span>accusof</span>
+        </h1>
+        <div>
+          <label for="navtoggle">
+            <i class="las la-times"></i>
+          </label>
+        </div>
+        
+        
+      </div>
+      <div class="sidebar-main">
+        <ul class="side-main--list">
+          <li>
+            <a href="#" class="active">
+              <i class="las la-home"></i>
+              <span>DashBoard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="las la-users"></i>
+              <span>Customers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="las la-project-diagram"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="las la-store"></i>
+              <span>Inventory</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="las la-tasks"></i>
+              <span>Tasks</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="las la-wallet"></i>
+              <span>Accounts</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <header class="header-navs">
+      <div class="header-bars">
+       
+        <a href="#">
+          <label for="navtoggle">
+            <i class="las la-bars"></i>
+          </label>
+          <span>DashBoard</span>
+        </a>
+      </div>
+
+      <form class="header-input">
+        <i class="las la-search searcIcon"></i>
+        <input type="text" placeholder="search" />
+      </form>
+      <div class="user">
+        <div class="user-img">
+          <img src="./img/user.jpg" alt="userImage" />
+          <h2>
+            John Doe
+            <span class="small-header">Super Admin</span>
+          </h2>
+        </div>
+      </div>
+    </header>
+    <main class="main-container">
+      <div class="cards">
+        <div class="card">
+          <div class="card--item">
+            <h1>54</h1>
+            <i class="las la-users"></i>
+          </div>
+          <h3>Customers</h3>
+        </div>
+        <div class="card">
+          <div class="card--item">
+            <h1>79</h1>
+            <i class="las la-project-diagram"></i>
+          </div>
+          <h3>Projects</h3>
+        </div>
+        <div class="card">
+            <div class="card--item">
+              <h1>54</h1>
+              <i class="las la-shopping-bag"></i>
+            </div>
+            <h3>Orders</h3>
+          </div>
+        <div class="card active">
+          <div class="card--item">
+            <h1>$60</h1>
+            <i class="las la-hand-holding-usd"></i>
+          </div>
+          <h3 class="active" >Income</h3>
+        </div>
+      </div>
+
+      <div class="table">
+        <div class="table--projects">
+          <div class="table-header">
+            <h3>Recent Projects</h3>
+            <a href="#" class="btn">
+              see all
+              <i class="las la-arrow-right"></i>
+            </a>
+          </div>
+          <div class="table-title">
+            <h4>Project Title</h4>
+            <h4>Department</h4>
+            <h4> Status</h4>
+          </div>
+          <div class="table-item">
+            <h5>UI/UX Design</h5>
+            <h5>UI Team</h5>
+            <h5><span class="status purple"></span> review</h5>
+          </div>
+          <div class="table-item">
+            
+              <h5>Web development</h5>
+              <h5>Frontend</h5>
+              <h5><span class="status orange"></span> inprogress</h5>
+            
+          </div>
+          <div class="table-item">
+        
+              <h5>UI/UX Design</h5>
+              <h5>UI Team</h5>
+              <h5><span class="status green"></span> complete</h5>
+            
+          </div>
+          <div class="table-item">
+            
+            <h5>UI/UX Design</h5>
+            <h5>UI Team</h5>
+            <h5><span class="status orange"></span> review</h5>
+            
+          </div>
+          <div class="table-item">
+            <h5>UI/UX Design</h5>
+            <h5>UI Team</h5>
+            <h5><span class="status green"></span> review</h5>
+          </div>
+          <div class="table-item">
+            <h5>UI/UX Design</h5>
+            <h5>UI Team</h5>
+            <h5><span class="status purple"></span> review</h5>
+          </div>
+          <div class="table-item">
+            <h5>UI/UX Design</h5>
+            <h5>UI Team</h5>
+            <h5><span class="status green"></span> review</h5>
+          </div>
+          <div class="table-item">
+              <h5>UI/UX Design</h5>
+              <h5>UI Team</h5>
+              <h5><span class="status orange"></span> review</h5>
+          </div>
+        </div>
+        <div class="table--Customers">
+          <div class="table-header">
+            <h3>New Customer</h3>
+            <a href="#" class="btn">
+              see all
+              <i class="las la-arrow-right"></i>
+            </a>
+          </div>
+          <div class="table-customer-item">
+            <div class="custm">
+              <div class="custm-img">
+                <img src="./img/user.jpg" alt="custmImage" />
+                <h4>
+                  John Doe
+                  <span class="small-header">CEO expert</span>
+                </h4>
+              </div>
+            </div>
+            <div class="custm--icons">
+              <i class="lar la-user-circle"></i>
+              <i class="lar la-comment"></i>
+              <i class="las la-phone"></i>
+            </div>
+          </div>
+          <div class="table-customer-item">
+            <div class="custm">
+              <div class="custm-img">
+                <img src="./img/user.jpg" alt="custmImage" />
+                <h4>
+                  John Doe
+                  <span class="small-header">CEO expert</span>
+                </h4>
+              </div>
+            </div>
+            <div class="custm--icons">
+              <i class="lar la-user-circle"></i>
+              <i class="lar la-comment"></i>
+              <i class="las la-phone"></i>
+            </div>
+          </div>
+          <div class="table-customer-item">
+            <div class="custm">
+              <div class="custm-img">
+                <img src="./img/user.jpg" alt="custmImage" />
+                <h4>
+                  John Doe
+                  <span class="small-header">CEO expert</span>
+                </h4>
+              </div>
+            </div>
+            <div class="custm--icons">
+              <i class="lar la-user-circle"></i>
+              <i class="lar la-comment"></i>
+              <i class="las la-phone"></i>
+            </div>
+          </div>
+          <div class="table-customer-item">
+            <div class="custm">
+              <div class="custm-img">
+                <img src="./img/user.jpg" alt="custmImage" />
+                <h4>
+                  John Doe
+                  <span class="small-header">CEO expert</span>
+                </h4>
+              </div>
+            </div>
+            <div class="custm--icons">
+              <i class="lar la-user-circle"></i>
+              <i class="lar la-comment"></i>
+              <i class="las la-phone"></i>
+            </div>
+          </div>
+          <!-- <div class="table-customer-item">
+            <div class="custm">
+              <div class="custm-img">
+                <img src="./img/user.jpg" alt="custmImage" />
+                <h4>
+                  John Doe
+                  <span class="small-header">CEO expert</span>
+                </h4>
+              </div>
+            </div>
+            <div class="custm--icons">
+              <i class="lar la-user-circle"></i>
+              <i class="lar la-comment"></i>
+              <i class="las la-phone"></i>
+            </div>
+          </div>
+          <div class="table-customer-item">
+            <div class="custm">
+              <div class="custm-img">
+                <img src="./img/user.jpg" alt="custmImage" />
+                <h4>
+                  John Doe
+                  <span class="small-header">CEO expert</span>
+                </h4>
+              </div>
+            </div>
+            <div class="custm--icons">
+              <i class="lar la-user-circle"></i>
+              <i class="lar la-comment"></i>
+              <i class="las la-phone"></i>
+            </div>
+          </div>
+          <div class="table-customer-item">
+            <div class="custm">
+              <div class="custm-img">
+                <img src="./img/user.jpg" alt="custmImage" />
+                <h4>
+                  John Doe
+                  <span class="small-header">CEO expert</span>
+                </h4>
+              </div>
+            </div>
+            <div class="custm--icons">
+              <i class="lar la-user-circle"></i>
+              <i class="lar la-comment"></i>
+              <i class="las la-phone"></i>
+            </div>
+          </div>
+          <div class="table-customer-item">
+            <div class="custm">
+              <div class="custm-img">
+                <img src="./img/user.jpg" alt="custmImage" />
+                <h4>
+                  John Doe
+                  <span class="small-header">CEO expert</span>
+                </h4>
+              </div>
+            </div>
+            <div class="custm--icons">
+              <i class="lar la-user-circle"></i>
+              <i class="lar la-comment"></i>
+              <i class="las la-phone"></i>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
